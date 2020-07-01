@@ -1,0 +1,154 @@
+*{
+    font-family: sans-serif;
+
+}
+
+h1 {
+    color: royalblue;
+}
+
+ol {
+    list-style-type: upper-roman ;
+    /* ESTILOS PARA LISTAS ORDENADAS
+    lower-greek
+    upper-roman
+    lower-alpha
+    upper-alpha
+    decimal-leading-zero
+    lower-greek
+    */
+}
+
+ul {
+    list-style-type: circle;
+    /* ESTILOS PARA LISTAS NO ORDENADAS
+    disc
+    square
+    circle
+    */
+    list-style-position: inside;
+    /*
+    inside : sin el margen 
+    outside ; Margen alineado 
+    */
+}
+
+.listaticks {
+    list-style-image: url(../img/listicon.png);
+}
+
+.listaticks li {
+    margin-left: 20px;
+}
+
+/*------------------- FORMATO DE FORMULARIO --------------------- */
+
+form fieldset { /*FORMATO DEL RECUADRO*/
+
+    width: 500px;  /*Tamaño de ancho del recuadro*/
+    border: 1px solid #dcdcdc; /*tamaño tipo color*/
+    border-radius: 10px;  /*Redondea el cuadro del borde*/
+    /* Esta etiqueta puede no funcionar para navegadores
+        como firefox o zafari
+    */
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    /* Estas ultimas lineas son adaptadores para mas navegadores
+    */
+
+    padding: 20px;
+}
+
+form fieldset label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+form fieldset input {
+    border: none;
+    border-bottom: solid 1px #ddd;
+    width: 100%;
+    height: 20px;
+    font-size: 1, 2em;
+    color: #777;
+}
+
+form textarea {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #777;
+    font-size: 1, 2em;
+ 
+}
+
+form legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*---------------------- FORMATO DE LINK ------------------*/
+a {
+    text-decoration: no;
+}
+
+/*Los links tienen 4 estados*/
+
+/*por defecto*/
+a:link {
+    color: green;
+}
+
+/*Cuando el link es visitado*/
+a:visited {
+    color: red;
+}
+
+/*cuando se pasa el mause por encima*/
+a:hover {
+    font-size: 2em;
+    color: red;
+    border: dotted 5px green;
+}
+
+/*Cuando el link esta activo*/
+a:active {
+    background-color: yellow;
+}
+
+
+/*------------- ALGUNOS FORMATOS DE TABLA ---------------*/
+table {
+    width: 800px; /*Tamaño de ancho*/
+}
+
+th, td { /*cuaadros de cabecera y cuadros*/
+    padding: 10px;
+}
+
+th { /*formato de los cuadros de titulo*/
+    text-transform: uppercase; /*Convierte a mayusculas*/
+    font-size: 90%; /*Tamaño de letra*/
+    border-bottom: 2px solid #111; /*Borde por debajo*/
+    border-top: 2px solid #dcdcdc; /*Borde por arriba*/
+    text-align: left; /*Alineacion de taxto*/
+}
+
+table .oscura {
+    background-color: #eebbee;
+}
+
+tr:hover {
+    background-color: #c3e6e6 ;
+}
+
+
+
+

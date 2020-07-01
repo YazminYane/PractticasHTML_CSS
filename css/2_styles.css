@@ -1,0 +1,41 @@
+#caja{
+    /*background-color: orange;*/ /*Color solido de fondo*/
+    background-image: url(../img/2.png) ; /*colocar una img de fonfo*/
+    
+    /*Tamaño del elemento*/
+    height: 500px;
+    width: 500px;
+
+    padding: 20px; /*Da 20px de margen en los 4 lados*/
+    
+    /*Propiedades de borde*/
+    border: 3px dotted green;
+    border-top-width: 10px; /*bodifica solo el borde de arriba*/
+    border-right-color: royalblue; /*Modifica solo este borde*/
+    border-bottom: blue 10px dashed;
+} 
+    /*
+    Margin: El margen que existe entre un elemnto y 
+        los que tenga a lado
+    Padding: Es el espacio que hay en un contenedor, 
+        entre el contenido y los bordes del contenedor
+    */
+    /*Bordes: Tienen 3 propiedades ancho color y estilo*/
+p{
+    background-color: pink;
+    height: 400px;
+    width: 400px;
+    padding: 15px 10px 15px 10px; /*Arriba, derecha, abajo, izquierda*/
+    margin: 50px; 
+
+    border-color: red;
+    border-style: double;
+    border-width: 5px;
+
+    /*color : #1587DD;*/
+    color: rgb(12, 90, 0, 0.7);
+}
+
+.inlineheader {
+    display: inline;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!----------------------------------------------------------------------------------------------------->
+    <!--                                       FROMULARIOS                                               -->
+    <!----------------------------------------------------------------------------------------------------->
+    
+    <!--
+    ============================================================================================
+    Algunos atributos:
+        - Type: El tipo de entrada que recibirá datos.
+                text, email, checkbox, date, search, radio
+        - name: Es el nombre que tendra el valor del texto. Nonbre de variable.
+        - required: Indica que será un dato obligatoio, mandará un aviso de faltar. 
+        - value: Define el valor predeterminado a ser mostrado al cargar la página.
+        - class: El nombre que recibira el elemento como clase.
+        - placeholder(input y textarea): Se muestra en el navegador cuando no hay un valor.
+        - id: Identificador el elemento para acceder al mismo desde CSS o Javascript, 
+                este debe ser unico para cada elemento.
+    ============================================================================================
+    -->
+
+
+    <form action="">
+        <fieldset> <!--Se usa para encuadrar el formulario-->
+
+            <!--Titulo del formulario-->
+            <legend>Encuesta de gustos musicales</legend>
+            <br>
+            Nombre: <input type="text" name="nombre" required="required">
+            Apellido Materno: <input type="text" name="apMat" required="required">
+            Apellido Paterno: <input type="text" name="apMat" required="required">
+            <br><br>
+
+            E-mail <br>
+            <input type="email" placeholder="tu@gmail.com" required="required">
+            <br><br>
+            Eres un homre o mujer? <br>
+            <input type="radio" name="sexo" value="Nombre" checked="check">Hombre <br>
+            <input type="radio" name="sexo" value="Mujer">Mujer <br>
+            <br>
+
+            Seleciona los generos que mas te gusten <br>
+            <input type="checkbox" name="genero" value="Rock">Rock <br>
+            <input type="checkbox" name="genero" value="Pop">Pop <br>
+            <input type="checkbox" name="genero" value="Electronica">Electronica <br>
+            <input type="checkbox" name="genero" value="Jazz">Jazz <br>
+            <br>
+
+            ¿Cuanta musica escuchas al dia? <br>
+            <select name="tiempo" id="">
+                <option value="menos">menos 30</option>
+                <option value="entre">entre 30 y 1:30</option>
+                <option value="mas">mas de 1:30</option>
+            </select>
+            <br><br>
+
+            <!--El atributo required: indica que es un campo obligatorio-->
+            ¿Fecha de llegada? <br> <input type="date" name="llegada" required="required">
+            <br><br>
+
+            Busca algo <input type="search">
+            <br><br>
+
+            Comentario <br>
+            <textarea name="comentario" cols="70" rows="5" placeholder="Comentarios"></textarea>
+            <br><br>
+            
+            <input type="reset" name="limpiar" value="Limpiar">
+            <input type="submit" name="enviar" value="Enviar">
+
+
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

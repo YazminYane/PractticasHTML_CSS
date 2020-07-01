@@ -1,0 +1,52 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif; /*Se obtuvo de google font*/
+    /* FAMILIAS GENERICAS
+        serif
+        sans-serif
+        monospace
+        ---------------
+        cursive
+        fantasy
+    */
+}
+
+h1 {
+    font-size: 50px;
+    -webkit-font-smoothing: antialiased; /*Suaviza un poco el texto*/
+    text-rendering: optimizeLegibility; /*Suaviza un poco el texto*/
+
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal; /*Cambiar el peso*/
+    font-style: italic;
+    /* ESTILOS
+        italic
+        normal
+        oblique
+    */
+}
+
+p {
+    font-size: 16px;
+}
+
+.textotransformado {
+    text-transform: uppercase; /*Transforma las letras en mayusculas*/
+/*
+    uppercase : Transforma las letras en mayusculas
+    lowercase : Transforma las letras en minuscula
+    capitalize : Coloca en mayuscula la 1ra letra de cada palabra
+*/
+}
+
+.textodecorado {
+    text-decoration: line-through;  
+/*
+    underline : subraya por debajo del texto
+    overline : Subraya el texto por arriba
+    line-through : Tacha el texto
+    none : El texto no tendra singun formato    
+*/
+}
